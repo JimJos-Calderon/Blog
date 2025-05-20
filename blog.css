@@ -1,0 +1,530 @@
+/* stylelint-disable @stylistic/selector-list-comma-newline-after */
+
+/* ====================== */
+/* ESTILOS BASE */
+/* ====================== */
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+/* ====================== */
+/* ENCABEZADO */
+/* ====================== */
+.blog-header {
+  border-bottom: 2px solid #00FFFF;
+}
+
+.blog-header-logo {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  color: #00FFFF !important;
+  text-shadow: 2px 2px #FF5722;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+  color: #FF5722 !important;
+}
+
+/* ====================== */
+/* NAVEGACIÓN */
+/* ====================== */
+.nav-scroller {
+  border-bottom: 1px dotted #00FFFF;
+}
+
+.nav-scroller .nav {
+  font-size: 0.7rem;
+}
+
+.nav-scroller .nav-link {
+  color: #e0e0e0;
+  padding: 0.5rem;
+}
+
+.nav-scroller .nav-link:hover {
+  color: #FF5722;
+}
+
+/* ====================== */
+/* CONTENIDO PRINCIPAL */
+/* ====================== */
+/* Jumbotron destacado */
+.p-md-5 {
+  background-color: #1a1a1a !important;
+  border: 3px solid #00FFFF;
+}
+
+/* Títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Press Start 2P', cursive;
+  color: #00FFFF;
+  text-shadow: 2px 2px 0px #FF5722;
+  margin-bottom: 1.5rem;
+}
+
+.display-4 {
+  font-size: 2rem;
+}
+
+/* Artículos */
+.blog-post {
+  margin-bottom: 4rem;
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.blog-post p {
+  font-size: 0.7rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.blog-post-meta {
+  font-size: 0.6rem;
+  color: #727272;
+  margin-bottom: 1.25rem;
+}
+
+/* Listas */
+.blog-post ul,
+.blog-post ol {
+  font-size: 0.7rem;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.blog-post li {
+  margin-bottom: 0.5rem;
+}
+
+/* Tablas */
+.table {
+  font-size: 0.6rem;
+  color: #e0e0e0;
+  border-color: #333;
+}
+
+.table th {
+  background-color: #333;
+  color: #00FFFF;
+}
+
+.table td {
+  background-color: #1a1a1a;
+}
+
+/* Código */
+pre,
+code {
+  font-family: monospace !important;
+  font-size: 0.7rem;
+  background-color: #333;
+  color: #00FFFF;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+/* ====================== */
+/* BARRA LATERAL */
+/* ====================== */
+.bg-light {
+  background-color: #1a1a1a !important;
+  border: 1px solid #333;
+}
+
+.list-unstyled li {
+  margin-bottom: 0.8rem;
+}
+
+.list-unstyled a {
+  color: #00FFFF;
+  font-size: 0.7rem;
+}
+
+.list-unstyled a:hover {
+  color: #FF5722;
+  text-decoration: none;
+}
+
+/* ====================== */
+/* PAGINACIÓN */
+/* ====================== */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+
+.blog-pagination .btn {
+  font-size: 0.7rem;
+  padding: 0.5rem 1rem;
+}
+
+/* ====================== */
+/* PIE DE PÁGINA */
+/* ====================== */
+.blog-footer {
+  background-color: #1a1a1a;
+  border-top: 2px solid #00FFFF;
+  padding: 2rem 0;
+  font-size: 0.7rem;
+}
+
+.blog-footer a {
+  color: #00FFFF;
+}
+
+.blog-footer a:hover {
+  color: #FF5722;
+  text-decoration: none;
+}
+
+/* ====================== */
+/* ELEMENTOS COMUNES */
+/* ====================== */
+a {
+  color: #00FFFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF5722;
+}
+
+.btn {
+  background-color: #FF5722 !important;
+  border: 2px solid #00FFFF !important;
+  color: white !important;
+  font-size: 0.7rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0 !important;
+}
+
+.btn:hover {
+  background-color: #00FFFF !important;
+  color: #121212 !important;
+}
+
+/* ====================== */
+/* CLASES UTILITARIAS */
+/* ====================== */
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.h-250 {
+  height: 250px;
+}
+
+@media (min-width: 768px) {
+  .h-md-250 {
+    height: 250px;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .blog-header-logo {
+    font-size: 2rem;
+  }
+}
+
+/* ====================== */
+/* EFECTOS ESPECIALES */
+/* ====================== */
+/* Efecto de cursor parpadeante para títulos */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.blog-post-title::after {
+  content: "|";
+  animation: blink 1s step-end infinite;
+  margin-left: 3px;
+}
+
+.fondo-titulo {
+  background-image: url(Img/book_cover.jpg);
+  background-color: #1a1a1a; /* Fallback si la imagen no carga */
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 3px solid #00FFFF;
+  position: relative;
+  min-height: 300px; /* Altura mínima para móviles */
+  overflow: hidden; /* Evita desbordamiento */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .fondo-titulo {
+    background-position: center bottom 20px; /* Imagen debajo del texto */
+    background-size: 80% auto; /* Reduce tamaño de la imagen */
+    padding-bottom: 180px; /* Espacio para la imagen */
+    text-align: center; /* Centra el texto */
+  }
+  
+  .fondo-titulo .col-md-8 {
+    background-color: rgba(26, 26, 26, 0.8); /* Fondo semitransparente para legibilidad */
+    padding: 20px;
+    border-radius: 4px;
+  }
+}
+/* ====================== */
+/* FEATURED POSTS STYLES */
+/* ====================== */
+.featured-post {
+  border: 2px solid #00FFFF !important;
+  background-color: #1a1a1a !important;
+  transition: all 0.3s ease;
+}
+
+.featured-post:hover {
+  box-shadow: 0 0 15px #00FFFF;
+  transform: translateY(-3px);
+}
+
+.featured-post .col p-4 {
+  background-color: #1a1a1a;
+}
+
+.featured-post h3 {
+  color: #00FFFF;
+  text-shadow: 1px 1px 0 #FF5722;
+  font-size: 1.2rem;
+}
+
+.featured-post .mb-2 {
+  color: #FF5722 !important;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+
+.featured-post .mb-1 {
+  color: #727272 !important;
+  font-size: 0.6rem;
+}
+
+.featured-post .card-text {
+  color: #e0e0e0;
+  font-size: 0.7rem;
+}
+
+.featured-post-img {
+  border-left: 2px solid #00FFFF !important;
+  object-fit: cover;
+}
+
+/* Difficulty stars */
+.difficulty-rating {
+  color: #FF5722;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .featured-post {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .featured-post-img {
+    border-left: none !important;
+    border-top: 2px solid #00FFFF !important;
+  }
+}
+.difficulty-rating {
+  color: #FF5722;
+  font-weight: bold;
+}
+/* Estilo para alertas Gunter */
+.oasis-alert {
+  font-size: 0.7rem;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Listas numeradas estilo terminal */
+.oasis-list {
+  counter-reset: item;
+  padding-left: 0;
+}
+.oasis-list li {
+  display: block;
+  margin-bottom: 0.7rem;
+  font-size: 0.75rem;
+}
+.oasis-list li:before {
+  content: counter(item) ".";
+  counter-increment: item;
+  color: #00FFFF;
+  margin-right: 10px;
+}
+
+/* Tablas temáticas */
+.oasis-table {
+  width: 100%;
+  font-size: 0.65rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #333;
+}
+.oasis-table th {
+  background-color: #0d1a1a;
+  color: #FF5722 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.oasis-table td {
+  background-color: #1a1a1a;
+  border-top: 1px solid #333;
+}
+.oasis-table tr:hover td {
+  background-color: #252525;
+}
+
+/* Bloques de código mejorados */
+.oasis-codeblock pre {
+  position: relative;
+}
+.oasis-codeblock:after {
+  content: ">_";
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color: #FF5722;
+  font-size: 0.6rem;
+}
+/* Estilos para el Nivel 3 */
+.nivel3-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.nivel3-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: url('Img/dragon_icon.png') no-repeat;
+  opacity: 0.3;
+}
+
+.game-card {
+  transition: transform 0.3s;
+}
+
+.game-card:hover {
+  transform: translateX(5px);
+  border-color: #00FFFF !important;
+}
+
+.quiz-box {
+  position: relative;
+}
+
+.quiz-box::before {
+  content: "?";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #FF5722;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nivel3-reward {
+  position: relative;
+}
+
+.nivel3-reward::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: #00FFFF;
+  font-size: 2rem;
+  opacity: 0.5;
+}
+/* Estilo para la barra de navegación */
+.nav-scroller {
+  border-bottom: 1px dotted #00FFFF !important;
+}
+
+.nav {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-link {
+  font-size: 0.7rem !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #FF5722 !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #00FFFF;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Iconos Font Awesome (si los usas) */
+.fas {
+  font-size: 0.6rem;
+  color: #FF5722;
+}
+@media (max-width: 768px) {
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+  .nav-link {
+    padding: 0.3rem !important;
+    text-align: center;
+    font-size: 0.65rem !important;
+  }
+}
