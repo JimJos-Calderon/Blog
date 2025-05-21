@@ -1,8 +1,4 @@
-/* stylelint-disable @stylistic/selector-list-comma-newline-after */
 
-/* ====================== */
-/* ESTILOS BASE */
-/* ====================== */
 body {
   font-family: 'Press Start 2P', cursive;
   background-color: #121212;
@@ -50,10 +46,7 @@ body {
   color: #FF5722;
 }
 
-/* ====================== */
-/* CONTENIDO PRINCIPAL */
-/* ====================== */
-/* Jumbotron destacado */
+
 .p-md-5 {
   background-color: #1a1a1a !important;
   border: 3px solid #00FFFF;
